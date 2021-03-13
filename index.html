@@ -5,61 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="robots" content="noindex"/>
 
-    <title>The Canseco Brothers</title>
+    <title>$ ls canseco/</title>
 
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link href="pattern.min.css" rel="stylesheet">
+
     <style>
-      @media only screen and (min-width: 993px) {
-        .container {
-          width: 50%;
-        }
+      body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        margin: 0px;
+        font-size: 10vw;
+        text-align: center;
+        font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
       }
 
-      .container {
-        margin-top: 60px;
-        background-color: whitesmoke;
+      section {
+        width: 50%;
       }
 
-      hr {
-        margin-top: 15px;
-        margin-bottom: 15px;
+      a:hover, a:visited, a:link, a:active {
+        color: black;
+        text-decoration: none;
       }
     </style>
   </head>
-  <body class="container">
-    <h3 class="center-align">The Canseco Brothers</h3>
-    <hr/>
-    <div class="row">
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            <img class="responsive-img" src="images/borja.png">
-            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red" href="https://full.stack.dev">
-              <i class="material-icons">home</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <span class="card-title">Borja Canseco</span>
-            <p>Software Engineer II at Twilio</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m6">
-        <div class="card">
-          <div class="card-image">
-            <img class="responsive-img" src="images/pablo.jpg">
-            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red" href="https://pa.blocanse.co">
-              <i class="material-icons">home</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <span class="card-title">Pablo M. Canseco</span>
-            <p>Software Engineer II at Twilio SendGrid</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <body class="pattern-dots-sm">
+    <section>
+      <a href="https://full.stack.dev" title="Borja Canseco">Borja</a>
+    </section>
+    <section>
+      <a href="https://pa.blocanse.co" title="Pablo M. Canseco">Pablo</a>
+    </section>
   </body>
 </html>
